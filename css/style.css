@@ -1,0 +1,73 @@
+:root {
+  --main-color: #fec260;
+  --black-color: #352e28;
+}
+::selection {
+  background-color: var(--main-color);
+  color: var(--black-color);
+}
+body {
+  height: 100vh;
+}
+.page {
+  background-color: #f7ecde;
+}
+.main-title {
+  font-family: "Pacifico", cursive;
+  color: var(--black-color);
+  position: relative;
+  z-index: 2;
+}
+.main-title h2 {
+  font-size: 50px;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+.main-title h2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  background-color: var(--main-color);
+  bottom: 0;
+  z-index: -1;
+}
+.main-title h2:hover::before {
+  height: 80%;
+  transition: height 0.5s;
+}
+.inputs {
+  border-top: 1.5px dashed;
+  border-bottom: 1.5px dashed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.inputs .title {
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+  margin: auto;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.inputs .title h3 {
+  font-family: "Righteous", cursive;
+}
+.inputs .title i {
+  font-size: 25px;
+}
+.inputs form {
+  width: 100%;
+}
+.inputs form label {
+  font-size: 18px;
+}
+tbody tr th a {
+  text-decoration: none;
+}

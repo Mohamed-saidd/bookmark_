@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="icon" href="imgs/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>TEST</title>
+  </head>
+  <body>
+    <div class="page w-100">
+      <div class="container py-5">
+        <div class="main-title py-3 text-center">
+          <h2 class="">Bookmarker</h2>
+        </div>
+        <div class="inputs py-3 my-5">
+          <div class="title mb-5">
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Bookmark your favorite sites</h3>
+            <i class="fa-solid fa-bookmark"></i>
+          </div>
+          <form>
+            <label for="name" class="form-label fw-semibold w-100"
+              ><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label
+            >
+            <input
+              required
+              placeholder="Bookmark Name"
+              type="text"
+              id="name"
+              class="form-control mb-4"
+              \
+            />
+            <label for="mail" class="form-label fw-semibold w-100"
+              ><i class="fa-solid fa-link pe-2"></i>Site URL</label
+            >
+            <input
+              required
+              placeholder="Website URL"
+              type="email"
+              id="mail"
+              class="form-control"
+              \
+            />
+          </form>
+          <button
+            type="submit"
+            onclick="addInfo(), clearForm()"
+            class="btn btn-danger px-5 mt-5 mb-3"
+          >
+            Submit
+          </button>
+        </div>
+        <table class="table table-striped align-middle table-hover text-center">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="myData"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
